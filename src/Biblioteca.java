@@ -15,6 +15,7 @@ public class Biblioteca {
         emprestar(livro1, cliente);
         emprestar(livro2, cliente);
         emprestar(livro3, cliente);
+        devolver(livro3, cliente);
         cliente.mostraLivrosEmprestados();
     }
 
@@ -32,6 +33,7 @@ public class Biblioteca {
         boolean livroEncontrado = false;
         if(cliente.livrosEmprestados.isEmpty()){
             System.out.println("Nenhum livro emprestado ainda");
+            return;
         } else {
             for(int i=0; i < cliente.livrosEmprestados.size(); i++){
                 Livros livroEmprestado = cliente.livrosEmprestados.get(i);
@@ -39,14 +41,15 @@ public class Biblioteca {
                 if(livroEmprestado.titulo.equals(livro.titulo)){
                     cliente.livrosEmprestados.remove(i);
                     livroEncontrado = true;
+                    livro.disponivel = true;
                     System.out.println("O livro foi encontrado e devolvido por: " + cliente.nome);
-                    break;
+                    return;
                 }
 
+            }
                 if(!livroEncontrado) {
                     System.out.println("O livro não foi encontrado");
                 }
-            }
         }
 
     }
