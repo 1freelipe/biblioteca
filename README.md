@@ -1,3 +1,5 @@
-## pequena aplicaç� simples e rápida de um gerenciador de empréstimos e devolu� para uma bibliotecas feito em JAV
+## Pequena aplicação de um gerenciador de empréstimos e devoluções de livros para uma bibliteca
+
+Aplicação feita apenas para iniciar meu aprendizado na linguagem por conta da faculdade e aprofundar meus conceitos sobre POO.
 
 
