@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public class Biblioteca {
     public static void main(String[] args){
         Livros livro1 = new Livros("O pequeno príncipe", "Saint-Exupéry", 2011);
